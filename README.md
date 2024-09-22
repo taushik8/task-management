@@ -34,9 +34,9 @@
   ```json
   {
     "title": "string",
-    "description": "string",
-    "status":"string",
-    "dueDate": "string"
+    "description": "string", (optional)
+    "status":"string",(default:pending)
+    "dueDate": "string"(optional)
   }
 
 #### Update Task 
@@ -44,10 +44,10 @@
 - **Request Body**:
   ```json
   {
-    "title": "string",
-    "description": "string",
-    "status":"string",
-    "dueDate": "string"
+    "title": "string", (optional)
+    "description": "string", (optional)
+    "status":"string", (optional)
+    "dueDate": "string" (optional)
   }
 #### Get Tasks 
 - **Endpoint**: `GET /api/tasks`
