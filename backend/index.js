@@ -6,13 +6,11 @@ const mongoose = require('mongoose');
 const userRoutes = require('./routes/user');
 const taskRoutes = require('./routes/tasks');
 
-// Initialize express app
-const app = express();
 
-// Middleware to parse JSON bodies
+const app = express();
 app.use(express.json());
 
-// Connect to MongoDB (simplified, without error handling)
+
 mongoose.connect(process.env.MONGO_URI);
 
 // Routes
